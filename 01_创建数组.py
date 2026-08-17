@@ -160,7 +160,8 @@ print("1.5 复制数组的注意事项")
 original = np.array([1, 2, 3, 4, 5])
 
 # 方式一：直接赋值（这是坑！）
-arr2 = original       # 这不会创建新数组！arr2 只是 original 的别名
+arr2 = original       
+# 这不会创建新数组！arr2 只是 original 的别名
 arr2[0] = 999         # 修改 arr2
 print("直接赋值后，原数组也变了:", original)
 # 输出 [999, 2, 3, 4, 5] —— 原数组被改了！
